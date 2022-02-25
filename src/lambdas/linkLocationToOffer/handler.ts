@@ -65,7 +65,7 @@ const link = (location: LocationModel, offer: OfferModel): LinkModel => {
 }
 
 const existOffersArray = (location: LocationModel): boolean => {
-  return location.offers?.length === 0
+  return location.offers?.length > 0
 }
 
 const isLocationOffersContainsOfferId = (offerId: string, location: LocationModel): boolean => {
