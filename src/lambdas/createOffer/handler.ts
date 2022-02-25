@@ -1,5 +1,5 @@
 import { HttpResponse } from '../../common/protocols/http'
-import { badRequest, ok, serverError, conflict } from '../../common/helpers/http/http-helper'
+import { badRequest, created, serverError, conflict } from '../../common/helpers/http/http-helper'
 import { APIGatewayEvent } from 'aws-lambda'
 import { makeValidation } from './validation'
 import Dynamo from '../../infra/dynamodb'
@@ -46,7 +46,7 @@ export const createOffer = async (event: APIGatewayEvent): Promise<HttpResponse>
       locationsTotal: 0
     }
     await Dynamo.write(offer, process.env.OFFER_TABLE)
-    return ok({ offer, resource: event.path })
+    return created({ offer, resource: event.path })
   } catch (error) {
     console.error(error)
     return serverError(error)

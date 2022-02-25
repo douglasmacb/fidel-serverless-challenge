@@ -27,7 +27,7 @@ describe('createLocation handler', () => {
     expect(httpResponse.statusCode).toBe(400)
   })
 
-  test('Should return 200 with correct values', async () => {
+  test('Should return 201 with correct values', async () => {
     const httpRequest: any = {
       body: JSON.stringify({
         brandId: 'any_brand_id',
@@ -35,7 +35,7 @@ describe('createLocation handler', () => {
       })
     }
     const httpResponse = await createLocation(httpRequest)
-    expect(httpResponse.statusCode).toBe(200)
+    expect(httpResponse.statusCode).toBe(201)
   })
 
   test('Should return 409 if the location already exists', async () => {

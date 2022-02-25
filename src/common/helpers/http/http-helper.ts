@@ -58,6 +58,14 @@ export const ok = (data: Record<string, unknown>): HttpResponse => ({
   })
 })
 
+export const created = (data: Record<string, unknown>): HttpResponse => ({
+  statusCode: 201,
+  body: JSON.stringify({
+    ...data,
+    status: 201
+  })
+})
+
 export const unauthorized = (): HttpResponse => ({
   statusCode: 401,
   body: JSON.stringify({
