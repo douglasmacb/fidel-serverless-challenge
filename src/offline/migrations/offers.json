@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Super Duper Offer",
+    "id": "d9b1d9ff-543e-47c7-895f-87f71dcad91b",
+    "brandId": "692126c8-6e72-4ad7-8a73-25fc2f1f56e4",
+    "locationsTotal": 0
+  },
+  {
+    "name": "Super Bock Offer",
+    "id": "d9b1d900-543c-57c7-895f-87f71dcad91x",
+    "brandId": "692026c8-6e72-4a77-8a74-25fc2f1f56j4",
+    "locationsTotal": 0
+  },
+  {
+    "name": "Super 5% Discount Offer",
+    "id": "c1b1d9ff-543e-47c7-895f-87f71dcad91k",
+    "brandId": "692126c8-6e72-4ad7-8a73-25fc2f1f56e4",
+    "locationsTotal": 0
+  }
+]

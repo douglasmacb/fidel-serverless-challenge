@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@lambdas/*": ["src/lambdas/*"],
+      "@infra/*": ["src/infra/*"],
+      "@common/*": ["src/common/*"],
+      "@utils/*": ["src/utils/*"],
+      "@domain/*": ["src/domain/*"]
+    }
+  }
+}
